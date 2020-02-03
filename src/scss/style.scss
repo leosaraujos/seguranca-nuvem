@@ -1,0 +1,44 @@
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap);
+//Colors
+$white	  : #FFFFFF;
+$black    : #000000;
+
+//Mixins Border-radius
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+//shadow
+@mixin box-shadow () {
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,0.075) !important;
+}
+
+//Placeholder
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $blue !important;  
+  font-size: 1.0rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $blue !important;  
+  font-size: 1.0rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $blue !important;  
+  font-size: 1.0rem;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $blue !important;  
+  font-size: 1.0rem;
+}
+
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+
+//Media Queries
+@import 'client_style_queries.scss';

@@ -1,0 +1,33 @@
+{
+  "name": "Gol da Virada",
+  "version": "1.0.0",
+  "description": "sistema de apostas utilizando api do cartola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",    
+    "url": "git+https://github.com/leosaraujos/seguranca-nuvem.git"
+  },
+  "author": "LeoAraujo",
+  "license": "ISC",
+  "homepage": "https://github.com/leosaraujos/seguranca-nuvem.git#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "bootstrap-select": "^1.13.10",
+    "browser-sync": "^2.26.5",    
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "highcharts": "^7.1.2"
+  }
+}
