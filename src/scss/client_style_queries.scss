@@ -143,5 +143,15 @@ $mq-desktop           : 1200px !default;
   }
 }
 
-@include mobile-only() {}
+@include mobile-only() {
+
+  //Footer
+  footer {
+    .logoFooter {
+      width: 80px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
 @include mobile-portrait-only() {}
