@@ -145,6 +145,49 @@ $mq-desktop           : 1200px !default;
 
 @include mobile-only() {
 
+  //Section
+  section {
+    .titleSection {
+      font-size: 1.5rem;
+    }
+  }
+
+  //navClient
+  .navClient {
+    .logoHeader {
+      width: 190px;
+    }    
+    &.fixClient {
+      .logoHeader {
+        width: 190px;
+      }    
+    }
+  }
+
+  //header
+header {
+  min-height: 500px;
+  padding: 6.0rem 0 2.0rem 0;
+  .titlePage {
+    margin-top: 180px;
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }  
+}
+
+  //video case
+  #video-case {
+    .bt-video {
+      top: 30%;     
+    }
+  }
+
   //Footer
   footer {
     .logoFooter {

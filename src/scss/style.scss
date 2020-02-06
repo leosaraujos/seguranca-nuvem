@@ -10,12 +10,14 @@ $gray-clean : #f6f9ff;
 $gray       : #777777;
 $black      : #444444;
 $purple     : #5f2ced;
+$pu: #9a53f2;
+$pi: #6638e6;
 
 @mixin bgSpace {
   background-image: -moz-linear-gradient( 45deg, rgb(95,44,237) 0%, rgb(152,73,250) 100%);
   background-image: -webkit-linear-gradient( 45deg, rgb(95,44,237) 0%, rgb(152,73,250) 100%);
   background-image: -ms-linear-gradient( 45deg, rgb(95,44,237) 0%, rgb(152,73,250) 100%);
-  // opacity: 0.902;
+  opacity: 0.902;
   // position: absolute;
   // left: 0px;
   // top: 0px;
@@ -55,6 +57,10 @@ $purple     : #5f2ced;
     transition: 0.2s;
   }
 }
+%z-1 {
+  position: relative;
+  z-index: 1;
+}
 
 //Placeholder
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -74,11 +80,203 @@ $purple     : #5f2ced;
   font-size: 1.0rem;
 }
 
+//Animation
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+//Section
+section {
+  padding: 3.0rem 0;
+  .titleSection {
+    color: $purple;
+    font-weight: $semi-b;
+    margin-bottom: 3.0rem;
+  }
+  .description {
+    color: $gray;
+  }
+}
+
+//navClient
+.navClient {
+  background-color: transparent !important;
+  .nav-link {
+    color: $white !important;
+    font-weight: $semi-b;
+  }
+  &.fixClient {
+    background-color: $purple !important;
+    transition: 0.2s;
+    .logoHeader {
+      width: 200px;
+    }
+  }
+  .navbar-toggler {
+    background: $white;
+    color: rgba($purple, 1);
+    border-color: rgba($purple, 1);
+  }
+}
+
+//header
+header {
+  padding: 4.0rem 0;
+  min-height: 750px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include bgSpace();
+  .titlePage {
+    color: $white;
+    font-weight: $bold;
+    @extend %z-1;
+  }
+  p {
+    color: $white;
+    font-weight: $regular;
+    font-style: italic; 
+    @extend %z-1;
+  }
+  .btn {
+    @extend %bt-default;
+    border-color: $white;
+    color: $white;
+
+    margin: 1.0rem 0;
+    @extend %z-1;
+    &:hover {
+      color: $purple;
+      background: $white;
+    }
+  }
+  .float {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 0;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+//ferramentas
+#ferramentas {
+  .fer {
+    margin-bottom: 4.5rem;
+    .icon {
+      margin-bottom: 1.0rem;
+    }
+    .titleFer {
+      color: $black;
+      font-weight: $bold;
+      font-size: 1.0rem;
+    }
+    .description {
+      color: $gray;
+      font-weight: $regular;
+      font-size: 0.9rem;
+      display: block;
+      min-height: 70px;      
+    }
+    .btn {      
+      @extend %bt-default;
+      padding: 0.5rem 3.0rem;      
+    }
+  }  
+}
+
+//solucoes
+#solucoes {
+  background: $gray-clean;
+  .sol {
+    .titleSol {
+      color: $black;
+      font-weight: $semi-b;
+      font-size: 1.0rem;
+    }
+    .description {
+      color: $gray;
+      font-weight: $regular;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+//contato
+#contato {
+  .titleSec {
+    color: $purple;
+    font-weight: $semi-b;
+    font-size: 1.2rem;
+  }
+  .infoContact {
+    color: $black;
+    font-weight: $regular;
+    font-size: 0.9rem;
+    a {
+      font-size: 1.0rem;
+      color: $black;
+      font-weight: $semi-b;
+      transition: 0.2s;
+      &:hover {
+        color: $purple;
+        transition: 0.2s;
+        text-decoration: none;
+      }
+    }
+  }
+  .bt-send {
+    @extend %bt-default;
+    background: $purple;
+    color: $white;
+    padding: 0.5rem 4.0rem;
+    @include border-radius (5px);
+  }
+  .description {
+    font-weight: $regular;
+    text-align: justify;
+  }
+}
+
+//video case
+#video-case {
+  position: relative;
+  text-align: center;
+  padding-bottom: 0 !important;
+  img {
+    z-index: 1;
+  }
+  .bt-video {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    z-index: 2;
+    top: 40%;
+    left: 0;
+    &:after {
+      display: block;
+      content: ' Vídeo Case ';
+      color: $white;
+      width: 100%;
+    }
+  }
+}
 
 //Footer
 footer {

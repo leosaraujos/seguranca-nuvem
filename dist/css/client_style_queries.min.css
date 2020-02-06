@@ -1,1 +1,1 @@
-@media(max-width:480px){footer .logoFooter{width:80px;height:auto;margin-bottom:.5rem}}
+@media(max-width:480px){section .titleSection{font-size:1.5rem}.navClient .logoHeader{width:190px}.navClient.fixClient .logoHeader{width:190px}header{min-height:500px;padding:6rem 0 2rem 0}header .titlePage{margin-top:180px;font-size:1.4rem}header p{font-size:.9rem}header .btn{width:100%}#video-case .bt-video{top:30%}footer .logoFooter{width:80px;height:auto;margin-bottom:.5rem}}
