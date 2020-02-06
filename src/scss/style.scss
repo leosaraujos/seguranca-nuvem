@@ -36,7 +36,18 @@ $pi: #6638e6;
 
 //shadow
 @mixin box-shadow () {
-	box-shadow: 0 .125rem .25rem rgba(0,0,0,0.075) !important;
+	box-shadow: 0 .135rem .35rem rgba(0,0,0,0.4) !important;
+}
+
+.success {
+    text-align: center;
+    background: #ddd3fb;
+    padding: 0.8rem;
+    color: #5f2ced;
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
 }
 
 //Extends
@@ -118,8 +129,8 @@ section {
     font-weight: $semi-b;
   }
   &.fixClient {
-    background-color: $purple !important;
-    transition: 0.2s;
+    background-color: $purple !important;    
+    @include box-shadow();
     .logoHeader {
       width: 200px;
     }
@@ -284,7 +295,13 @@ footer {
   color: $white;
   padding: 3.0rem 0 0 0;
   a {
-    color: $white;    
+    color: $white;
+    transition: 0.2s;   
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+      transition: 0.2s;   
+    } 
   }
   .contactFooter {
     span {

@@ -10,8 +10,8 @@
             echo '<span class="badge badge-danger">Informe um telefone</span>';
             $erro = 1;
         }
-        if($_POST['assunto'] == ''){
-            echo '<span class="badge badge-danger">Informe um assunto</span>';
+        if($_POST['empresa'] == ''){
+            echo '<span class="badge badge-danger">Informe uma empresa</span>';
             $erro = 1;
         }
         if($_POST['email'] == ''){
@@ -34,7 +34,7 @@
             $nome = $_POST['nome'];
             $email = $_POST['email'];
             $telefone = $_POST['telefone'];
-            $assunto = $_POST['assunto'];
+            $empresa = $_POST['empresa'];
             $mensagem = $_POST['mensagem'];
             $ip = $_SERVER['REMOTE_ADDR'];
             $navegador = $_SERVER['HTTP_USER_AGENT'];
@@ -44,11 +44,11 @@
             $headers .= "From: $nome <$email>\n"; // remetente
             $headers .= "Return-Path: $nome <$email>\n"; // return-path
 
-            $subject = 'Contato Site IELP';
+            $subject = '2S - Segurança na Nuvem';
 
             $mensagem = '
             <html>
-            <title>Contato Site IELP</title>
+            <title>2S - Segurança na Nuvem</title>
             <body>
                 
             
@@ -57,51 +57,50 @@
                 <thead>
                     <tr>
                         <th colspan="2">
-                            <img src="http://leoaraujo.com/yodesign/ielp/images/logo-ielp.png" alt="IELP" width="500px">
+                            <img src="http://leoaraujo.com/yodesign/2s-security-cloud/images/header-email.jpg" alt="2S - Segurança na Nuvem" width="500px">
                         </th>
                     </tr>
-                    <tr bgcolor="#ffc20f">
-                        <th colspan="2" style="font-size: 25px; padding: 10px 0;text-align: center;">Contato Site IELP</th>
+                    <tr bgcolor="#5f2ced">
+                        <th colspan="2" style="font-size: 25px; padding: 10px 0;text-align: center; color: #FFFFFF;">2S - Segurança na Nuvem</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr bgcolor="#ffe8b2">
+                    <tr bgcolor="#ddd1ff">
                         <td width="100px" style="font-size:16px; font-weight: bold">Nome:</td>
                         <td style="padding:2px 10px">'.$nome.'</td>
                     </tr>
-                    <tr bgcolor="#fff9eb">
+                    <tr bgcolor="#d9d6e2">
                         <td width="100px" style="font-size:16px; font-weight: bold">E-mail:</td>
                         <td style="padding:2px 10px">'.$email.'</td>
                     </tr>
-                    <tr bgcolor="#ffe8b2">
+                    <tr bgcolor="#ddd1ff">
                         <td width="100px" style="font-size:16px; font-weight: bold">Telefone:</td>
                         <td style="padding:2px 10px">'.$telefone.'</td>
                     </tr>
-                    <tr bgcolor="#fff9eb">
-                        <td width="100px" style="font-size:16px; font-weight: bold">Assunto:</td>
-                        <td style="padding:2px 10px">'.$assunto.'</td>
+                    <tr bgcolor="#d9d6e2">
+                        <td width="100px" style="font-size:16px; font-weight: bold">Empresa:</td>
+                        <td style="padding:2px 10px">'.$empresa.'</td>
                     </tr>
-                    <tr bgcolor="#ffe8b2">
+                    <tr bgcolor="#ddd1ff">
                         <td width="100px" style="font-size:16px; font-weight: bold">Mensagem:</td>
                         <td style="padding:2px 10px">'.$mensagem.'</td>
                     </tr>
-                    <tr bgcolor="#fff9eb">
+                    <tr bgcolor="#d9d6e2">
                         <td colspan="2" style="text-align:justify"></td>
                     </tr>
                 </tbody>
                 <tfoot>
                 <tr>
                   <td colspan="2" style="text-align: center;">
-                    <img src="http://leoaraujo.com/yodesign/ielp/images/logo-ielp.png" alt="IELP">
+                    <img src="https://www.2s.com.br/wp-content/themes/2s/assets/img/logo-2s.png" alt="2S Inovações Tecnológicas">
                   </td>          
                 </tr>
                 <tr>
                   <td colspan="2" style="text-align: center;">
                     <address style="font-size: 0.7rem;">
-                    lorem ipsum is dolor sit amet<br>
-                    Tel +55 11 0000.0000 contato@ielp.com
+                    Tel +55 11 3305.1200 | contato@2s.com.br
                     </address>
-                    <small>IELP Instituto de Estudos Legislativos e Políticas Públicas © 2020 Todos os direitos reservados</small>
+                    <small>2S Inovações Tecnológicas - Todos os direitos reservados</small>
                   </td>
                 </tr>    
               </tfoot>

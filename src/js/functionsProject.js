@@ -1,9 +1,4 @@
-//Galeria
-// $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-//     event.preventDefault();
-//     $(this).ekkoLightbox();
-// });
-
+//Fechar nav ao clicar
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
@@ -25,11 +20,11 @@ $('a.scroll_section').on('click',function (e) {
 $(window).on('scroll',function() {
   var scrolltop = $(this).scrollTop();
 
-  if(scrolltop >= 50) {
+  if(scrolltop >= 40) {
     $('.navClient').addClass('fixClient');
   }
 
-  else if(scrolltop <= 50) {
+  else if(scrolltop <= 40) {
     $('.navClient').removeClass('fixClient');
   }
 

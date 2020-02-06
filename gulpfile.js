@@ -14,7 +14,9 @@ gulp.task('sass', function () {
   return gulp.src([
     './src/scss/**/*.scss',    
     'node_modules/bootstrap/scss/*.scss', 
-    'node_modules/bootstrap-select/sass/bootstrap-select.scss'
+    'node_modules/bootstrap-select/sass/bootstrap-select.scss',
+    'node_modules/animate.css/animate.css',      
+    './src/css/slick.css'
     ])
     .pipe(sass().on('error', sass.logError))
     .pipe(uglifycss())
@@ -52,7 +54,8 @@ gulp.task('lib', function(){
     'node_modules/bootstrap-select/dist/js/bootstrap-select.js',
 		'node_modules/popper.js/dist/umd/popper.js',
 		'node_modules/bootstrap/dist/js/bootstrap.js',
-    'node_modules/@fortawesome/fontawesome-free/js/all.js',    
+    'node_modules/@fortawesome/fontawesome-free/js/all.js',      
+    './src/libs/slick.js'
 		])
 	.pipe(concat('lib.js'))
 	//.pipe(jsmin())	
