@@ -33,3 +33,8 @@ $(window).on('scroll',function() {
   } 
 
 });
+
+//Modal
+$('#modalVideo').on('hidden.bs.modal', function (e) {
+  $('#modalVideo iframe').attr("src", $("#modalVideo iframe").attr("src"));
+});

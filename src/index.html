@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="shortcut icon" href="images/icon-client.png">       
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/style.min.css">
@@ -210,24 +211,33 @@
       </div>
     </section>
     
-    <!-- //Video Case -->
-    <div id="video-case" class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="http://players.brightcove.net/1384193102001/NJgI8K0ie_default/index.html?videoId=5545157960001" allowfullscreen></iframe>
-    </div>
+    
+   <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="http://players.brightcove.net/1384193102001/NJgI8K0ie_default/index.html?videoId=5545157960001"
+                allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
   
     <!-- //Video Case -->
-    <!-- <section id="video-case">
+    <section id="video-case">
       <div class="container-fluid">
         <div class="row">
           <div class="col h-100 p-0">
             <img src="images/video-case.jpg" alt="Vídeo Case" class="img-fluid">
-            <a href="" class="bt-video">
+            <a class="bt-video" data-toggle="modal" data-target="#modalVideo">
               <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"><path d="M250.347,295.9A33.28,33.28,0,0,0,240.6,284.45a1.343,1.343,0,0,0-1.6,2.16,30.593,30.593,0,0,1,8.956,10.517A29.979,29.979,0,0,1,251.313,311,30.313,30.313,0,1,1,221,280.687,1.343,1.343,0,0,0,221,278a32.983,32.983,0,1,0,29.347,17.9Zm0,0" transform="translate(-188 -278)" fill="#fff"/><path d="M274.011,340.723a1.342,1.342,0,0,0-.679,1.167v29.475a1.343,1.343,0,1,0,2.686,0V344.254L295.9,356.091l-14.622,9.422a1.343,1.343,0,1,0,1.455,2.257l16.445-10.594a1.343,1.343,0,0,0-.041-2.283l-23.778-14.156a1.342,1.342,0,0,0-1.351-.013Zm0,0" transform="translate(-249.455 -323.046)" fill="#fff"/></svg>
             </a>
           </div>
         </div>  
       </div>
-    </section> -->
+    </section>
 
     <!-- //Footer -->
     <footer>
