@@ -60,7 +60,7 @@
                             <img src="http://leoaraujo.com/yodesign/2s-security-cloud/images/header-email.jpg" alt="2S - Segurança na Nuvem" width="500px">
                         </th>
                     </tr>
-                    <tr bgcolor="#5f2ced">
+                    <tr bgcolor="#2b5c96">
                         <th colspan="2" style="font-size: 25px; padding: 10px 0;text-align: center; color: #FFFFFF;">2S - Segurança na Nuvem</th>
                     </tr>
                 </thead>

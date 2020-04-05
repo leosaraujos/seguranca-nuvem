@@ -9,21 +9,15 @@ $white	    : #FFFFFF;
 $gray-clean : #f6f9ff;
 $gray       : #777777;
 $black      : #444444;
-$purple     : #5f2ced;
-$pu: #9a53f2;
+$purple     : #2b5c96;
+$pu: #2b5c96;
 $pi: #6638e6;
 
 @mixin bgSpace {
-  background-image: -moz-linear-gradient( 45deg, rgb(95,44,237) 0%, rgb(152,73,250) 100%);
-  background-image: -webkit-linear-gradient( 45deg, rgb(95,44,237) 0%, rgb(152,73,250) 100%);
-  background-image: -ms-linear-gradient( 45deg, rgb(95,44,237) 0%, rgb(152,73,250) 100%);
+  background-image: -moz-linear-gradient( 45deg, rgb(29,84,148) 0%, rgb(3,152,218) 100%);
+  background-image: -webkit-linear-gradient( 45deg, rgb(29,84,148) 0%, rgb(3,152,218) 100%);
+  background-image: -ms-linear-gradient( 45deg, rgb(29,84,148) 0%, rgb(3,152,218) 100%);
   opacity: 0.902;
-  // position: absolute;
-  // left: 0px;
-  // top: 0px;
-  // width: 1920px;
-  // height: 1000px;
-  // z-index: 95;
 }
 
 
@@ -41,9 +35,9 @@ $pi: #6638e6;
 
 .success {
     text-align: center;
-    background: #ddd3fb;
+    background: #139ad5;
     padding: 0.8rem;
-    color: #5f2ced;
+    color: #2b5c96;
     h4 {
       font-size: 1.1rem;
       margin-bottom: 0;
